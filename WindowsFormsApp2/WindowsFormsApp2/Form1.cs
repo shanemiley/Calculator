@@ -37,8 +37,10 @@ namespace WindowsFormsApp2
             }
             else
                 textBox_Result.Text = textBox_Result.Text + button.Text;
+                //Append to label
+                labelCurrentOperation.Text += " " + textBox_Result.Text;
 
-           
+
         }
 
         private void Operator_click(object sender, EventArgs e)
